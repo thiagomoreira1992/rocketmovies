@@ -10,9 +10,13 @@ export default{
         GRAY_100: "#E5E5E5",
 
         LIGHT_GRAY: "#F4EDE8",
-        WHITE: "FFFFFF",
+        WHITE: "#FFFFFF",
         
         ROSE: "#FF859B",
         DARK_ROSE: "#FF859B0d",
+    },
+    FONTS:{
+        ROBOTO_SLAB: "'Roboto Slab', serif",
+        ROBOTO: "'Roboto', sans-serif"
     }
 }
