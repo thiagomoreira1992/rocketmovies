@@ -53,12 +53,13 @@ export const Container = styled.header`
       text-align: right;
     }
 
-    div a {
+    a {
       font-weight: 400;
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_200};
       text-align: right;
-      justify-self: flex-end;
+      align-self: flex-end;
+      width: fit-content;
     }
   }
 `;

@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 export const Lista = styled.div`
   max-width: 1130px;
+  margin: 0 auto;
   display: grid;
   grid-area: conteudo;
   align-items: center;
@@ -67,6 +68,7 @@ export const MovieList = styled.div`
   overflow-y: scroll;
   grid-area: filmes;
   padding-right: 10px;
+  height: calc(100vh - 300px);
 
   display: flex;
   flex-direction: column;
@@ -92,5 +94,11 @@ export const Movie = styled.div`
     width: 100%;
     height: 56px;
     font-style: normal;
+    overflow-y: hidden;
   }
+`;
+
+export const TagList = styled.div`
+  width: 100%;
+  height: 24px;  
 `;

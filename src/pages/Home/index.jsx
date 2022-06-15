@@ -1,8 +1,17 @@
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
-import { Container, MovieList, Lista, Movie, NewMovie, Title } from "./styles";
+import {
+  Container,
+  MovieList,
+  Lista,
+  Movie,
+  NewMovie,
+  Title,
+  TagList,
+} from "./styles";
 import { FiPlus } from "react-icons/fi";
 import { MovieRating } from "../../components/MovieRating";
+import { Tag } from "../../components/Tag";
 
 export function Home() {
   return (
@@ -50,6 +59,11 @@ export function Home() {
               Endurance, Cooper e Amelia descobrem que 23 anos se passaram.
             `.substring(0, 327) + "..."}
             </p>
+            <TagList>
+              <Tag title="Ficção Científica" />
+              <Tag title="Drama" />
+              <Tag title="Família" />
+            </TagList>
           </Movie>
           <Movie>
             <MovieRating title="Interstellar" rating={3} />
@@ -86,9 +100,14 @@ export function Home() {
               Endurance, Cooper e Amelia descobrem que 23 anos se passaram.
             `.substring(0, 327) + "..."}
             </p>
+            <TagList>
+              <Tag title="Ficção Científica" />
+              <Tag title="Drama" />
+              <Tag title="Família" />
+            </TagList>
           </Movie>
           <Movie>
-            <MovieRating title="Interstellar" rating={3} />
+            <MovieRating title="Interstellar" rating={4} />
             <p>
               {`Pragas nas colheitas fizeram a civilização humana regredir para
               uma sociedade agrária em futuro de data desconhecida. Cooper,
@@ -122,6 +141,11 @@ export function Home() {
               Endurance, Cooper e Amelia descobrem que 23 anos se passaram.
             `.substring(0, 327) + "..."}
             </p>
+            <TagList>
+              <Tag title="Ficção Científica" />
+              <Tag title="Drama" />
+              <Tag title="Família" />
+            </TagList>
           </Movie>
         </MovieList>
       </Lista>

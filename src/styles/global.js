@@ -13,7 +13,7 @@ export default createGlobalStyle`
     body{
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
         -webkit-font-smoothing: antialiased;
-        
+        height: 100%;
     }
 
 
@@ -43,16 +43,16 @@ export default createGlobalStyle`
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: transparent;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: ${({theme}) => theme.COLORS.ROSE};
-    border-radius: 27px;
+    border-radius: 50px;
     border: 1px none #ffffff;
   }
 
