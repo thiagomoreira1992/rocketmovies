@@ -1,10 +1,11 @@
 import { Container } from "./styles";
 
-export function Button({title, loading = false,icon : Icon, height, ...rest}){
+export function Button({title, loading = false,icon : Icon, deactivated, height, ...rest}){
     return(
         <Container
             type='button'
             disabled={loading}
+            deactivated={deactivated}
             height={height}
             {...rest}
         > 

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.button`
   width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.ROSE};
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme, deactivated }) => deactivated ? theme.COLORS.BLACK : theme.COLORS.ROSE};
+  color: ${({ theme, deactivated }) => deactivated ? theme.COLORS.ROSE : theme.COLORS.BACKGROUND_900};
 
   height: ${({height}) => height};
   border: 0;
@@ -12,7 +12,7 @@ export const Container = styled.button`
   justify-content: center;
 
   padding: 0 16px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   border-radius: 10px;
   font-weight: 500;
 
