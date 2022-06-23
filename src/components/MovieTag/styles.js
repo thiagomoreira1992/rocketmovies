@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
 
 
   font-family: ${({theme}) => theme.FONTS.ROBOTO};
@@ -24,9 +25,12 @@ export const Container = styled.div`
     }
 
   > input {
-    height: 56px;
     width: 60%;
+    height: 56px;
     color:${({theme}) => theme.COLORS.WHITE};
+    display: flex;
+    flex: 1 1 auto;
+    
 
     background: transparent;
     padding: 16px;

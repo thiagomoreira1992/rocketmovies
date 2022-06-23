@@ -69,9 +69,9 @@ function countStars(rating) {
   }
 }
 
-export function MovieRating({ title, rating, ...rest }) {
+export function MovieRating({ title, rating, fontSize = 24, ...rest }) {
   return (
-    <Container>
+    <Container fontSize={fontSize}>
       <h1>{title}</h1>
 
       <Rating>{countStars(rating)}</Rating>

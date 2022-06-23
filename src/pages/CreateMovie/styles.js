@@ -7,14 +7,14 @@ export const Container = styled.div`
   grid-template-rows: 115px auto;
 
   grid-template-areas:
-    "header header header"
-    ". conteudo .";
+    "header"
+    "conteudo";
 
   > main {
     grid-area: conteudo;
     overflow-y: auto;
-    padding: 40px 120px 70px;
-    width: 100%;
+    margin: 40px 120px 30px;
+    padding: 0 20px 10px;
   }
 `;
 
@@ -27,7 +27,7 @@ export const Title = styled.h1`
   grid-area: h1;
 `;
 
-export const NewMovie = styled.div`
+export const NewMovie = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;

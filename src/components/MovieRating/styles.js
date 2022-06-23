@@ -10,7 +10,7 @@ export const Container = styled.div`
   > h1 {
     font-family: ${({ theme }) => theme.FONTS.ROBOTO_SLAB};
     font-weight: 700;
-    font-size: 24px;
+    font-size: ${({fontSize}) => `${fontSize}px`};
 
     color: ${({theme}) => theme.COLORS.LIGHT_GRAY};
   }
@@ -21,8 +21,8 @@ export const Rating = styled.div`
   gap: 6px;
 
   > svg {
-      width: 12px;
-      height: 12px;
+      width: ${({fontSize}) => `${fontSize/2}px`};
+      height: ${({fontSize}) => `${fontSize/2}px`};
       color: ${({theme}) => theme.COLORS.ROSE};
   }
 `;
