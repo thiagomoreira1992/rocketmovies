@@ -10,7 +10,7 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <NavLink title="Voltar" href="#" icon={IoArrowBack} />
+        <NavLink title="Voltar" to="/" icon={IoArrowBack} />
       </header>
       <Form>
         <Avatar>

@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function NavLink({title, icon: Icon, href,  ...rest}){
+export function NavLink({title, icon: Icon, to,  ...rest}){
     return(
         <Container
-        href={href}
+        to={to}
         {...rest}
         >
             {Icon && <Icon size={16}/>}

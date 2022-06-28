@@ -11,7 +11,7 @@ export function MoviePreview() {
       <Header />
       <Movie>
         <section className="movieHeader">
-          <NavLink title="Voltar" href="#" icon={IoArrowBack} />
+          <NavLink title="Voltar" to="/" icon={IoArrowBack} />
           <MovieRating title="Interstellar" rating={3} fontSize={36} />
           <UserInfo>
             <img

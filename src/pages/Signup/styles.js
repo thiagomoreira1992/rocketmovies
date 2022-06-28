@@ -46,7 +46,7 @@ export const Form = styled.form`
     }
   }
 
-  > .inputs{
+  > .inputs {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -58,12 +58,11 @@ export const Form = styled.form`
     width: 100%;
     text-align: left;
     max-width: 450px;
-    color: ${({theme}) => theme.COLORS.LIGHT_GRAY};
-    font-family: ${({theme}) => theme.FONTS.ROBOTO_SLAB};
+    color: ${({ theme }) => theme.COLORS.LIGHT_GRAY};
+    font-family: ${({ theme }) => theme.FONTS.ROBOTO_SLAB};
     font-weight: 500;
     font-size: 24px;
   }
-
 
   > button {
     width: 100%;
@@ -74,7 +73,7 @@ export const Form = styled.form`
 export const Background = styled.div`
   background: url(${background}) no-repeat center;
   background-size: cover;
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   opacity: 70%;
 
   flex: 1;

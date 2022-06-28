@@ -19,12 +19,12 @@ export function Home() {
       <Header />
       <Lista>
         <Title>Meus filmes</Title>
-        <NewMovie>
+        <NewMovie to="/new-movie">
           {<FiPlus />}
           Adicionar Filme
         </NewMovie>
         <MovieList>
-          <Movie>
+          <Movie to="/preview-movie">
             <MovieRating title="Interstellar" rating={5} />
             <p>
               {`Pragas nas colheitas fizeram a civilização humana regredir para
@@ -65,7 +65,7 @@ export function Home() {
               <Tag title="Família" />
             </TagList>
           </Movie>
-          <Movie>
+          <Movie to="/preview-movie">
             <MovieRating title="Interstellar" rating={3} />
             <p>
               {`Pragas nas colheitas fizeram a civilização humana regredir para
@@ -106,7 +106,7 @@ export function Home() {
               <Tag title="Família" />
             </TagList>
           </Movie>
-          <Movie>
+          <Movie to="/new-movie">
             <MovieRating title="Interstellar" rating={4} />
             <p>
               {`Pragas nas colheitas fizeram a civilização humana regredir para

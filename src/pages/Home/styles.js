@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -37,7 +38,7 @@ export const Title = styled.h1`
   grid-area: h1;
 `;
 
-export const NewMovie = styled.a`
+export const NewMovie = styled(Link)`
   grid-area: button;
   width: 50%;
   background-color: ${({ theme }) => theme.COLORS.ROSE};
@@ -76,7 +77,7 @@ export const MovieList = styled.div`
   gap: 24px;
 `;
 
-export const Movie = styled.div`
+export const Movie = styled(Link)`
   background-color: ${({ theme }) => theme.COLORS.DARK_ROSE};
 
   width: 100%;

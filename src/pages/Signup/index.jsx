@@ -1,10 +1,15 @@
 import { Input } from "../../components/Input";
 import { Background, Container, Form } from "./styles";
-import { IoLockClosedOutline, IoMailOutline } from "react-icons/io5";
+import {
+  IoLockClosedOutline,
+  IoMailOutline,
+  IoArrowBack,
+} from "react-icons/io5";
 import { Button } from "../../components/Button";
+import { Name } from "../../assets/Name";
 import { NavLink } from "../../components/NavLink";
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <div>
@@ -13,8 +18,9 @@ export function SignIn() {
             <h1>RocketMovies</h1>
             <p>Aplicação para acompanhar tudo que assistir</p>
           </div>
-          <h2>Faça seu Login</h2>
+          <h2>Crie sua conta</h2>
           <div className="inputs">
+            <Input placeholder="Nome" type="text" icon={Name} />
             <Input placeholder="E-mail" type="email" icon={IoMailOutline} />
             <Input
               placeholder="Senha"
@@ -22,9 +28,9 @@ export function SignIn() {
               icon={IoLockClosedOutline}
             />
           </div>
-          <Button title="Entrar" height="56px" />
+          <Button title="Cadastrar" height="56px" />
         </Form>
-        <NavLink to="/register" title="Criar conta"/>
+        <NavLink to="/" title="Voltar para o login" icon={IoArrowBack} />
       </div>
       <Background />
     </Container>

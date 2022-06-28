@@ -14,7 +14,7 @@ export function CreateMovie() {
       <main>
         <NewMovie>
           <section className="movieHeader">
-            <NavLink title="Voltar" href="#" icon={IoArrowBack} />
+            <NavLink title="Voltar" to="/" icon={IoArrowBack} />
             <Title>Novo filme</Title>
           </section>
           <section className="movieTitle">
